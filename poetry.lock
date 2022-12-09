@@ -339,6 +339,22 @@ optional = false
 python-versions = ">=3.8"
 
 [[package]]
+name = "opencv-python"
+version = "4.6.0.66"
+description = "Wrapper package for OpenCV python bindings."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+numpy = [
+    {version = ">=1.21.2", markers = "python_version >= \"3.10\" or python_version >= \"3.6\" and platform_system == \"Darwin\" and platform_machine == \"arm64\""},
+    {version = ">=1.19.3", markers = "python_version >= \"3.6\" and platform_system == \"Linux\" and platform_machine == \"aarch64\" or python_version >= \"3.9\""},
+    {version = ">=1.14.5", markers = "python_version >= \"3.7\""},
+    {version = ">=1.17.3", markers = "python_version >= \"3.8\""},
+]
+
+[[package]]
 name = "packaging"
 version = "22.0"
 description = "Core utilities for Python packages"
@@ -647,7 +663,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d190ee05f99f4f43d186be21e14e72ac989387405af593821c4811a14aa22f10"
+content-hash = "efce0223f6f54dae8e1ba6b1ae5dfefaf55873a097dc30a4e06ff8b2272d50bf"
 
 [metadata.files]
 aiohttp = []
@@ -687,6 +703,7 @@ mypy-extensions = [
 ]
 nodeenv = []
 numpy = []
+opencv-python = []
 packaging = []
 pathspec = []
 pillow = []
