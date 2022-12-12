@@ -1,4 +1,5 @@
 /data/CCPD2019-dl1
 /logs
+/checkpoints
 .mypy_cache
 __pycache__
