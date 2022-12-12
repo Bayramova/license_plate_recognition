@@ -32,7 +32,7 @@ poetry run tensorboard --logdir <save directory for TensorBoard Logger>
 ```
 poetry run recognize --ckpt-path <path to checkpoint> --img-path <path to image>
 ```
-You can download pretrained model from [here](https://drive.google.com/drive/folders/1d34OtOA2zYlB307zpVjh_1CJnP4PJtii?usp=sharing) and save it locally (default path is *checpoints/best_checkpoint.ckpt* in repository's root) for usage.
+You can download pretrained model from [here](https://drive.google.com/drive/folders/1iYbb1Vvcy7AVs1zQRvh1qKaXUtMiG5rA?usp=sharing) and save it locally (default path is *checpoints/best_checkpoint.ckpt* in repository's root) for usage.
 
 ## Development
 
