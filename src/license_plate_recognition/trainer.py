@@ -24,7 +24,7 @@ class OCRModule(pl.LightningModule):
     ) -> None:
         super().__init__()
 
-        self.save_hyperparameters()  # type: ignore
+        self.save_hyperparameters("learning_rate", "dictionary_size")  # type: ignore
 
         self.learning_rate = learning_rate
         self.dictionary_size = dictionary_size
