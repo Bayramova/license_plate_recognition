@@ -6,6 +6,7 @@ authors = ["Sabina Bayramova <sb.sabina00@gmail.com>"]
 
 [tool.poetry.scripts]
 train = "license_plate_recognition.train:train"
+recognize = "license_plate_recognition.recognize:recognize"
 
 [tool.poetry.dependencies]
 python = "^3.9"
