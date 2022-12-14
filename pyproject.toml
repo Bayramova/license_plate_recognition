@@ -15,12 +15,12 @@ torch = "^1.12.1"
 torchvision = "^0.13.1"
 torchmetrics = "^0.11.0"
 pytorch-lightning = "^1.8.3"
-opencv-python = "^4.6.0"
 matplotlib = "^3.6.2"
 pandas = "^1.5.2"
 seaborn = "^0.12.1"
 tensorboard = "^2.11.0"
 streamlit = "1.10.0"
+opencv-python-headless = "^4.6.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^6.0.0"
