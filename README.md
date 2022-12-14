@@ -1,3 +1,4 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bayramova-license-plate-recognition-srcstreamlit-app-pe3ixm.streamlit.app/)
 # License Plate Recognition
 This is implementation of CRNN (CNN+RNN) model proposed in ["An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition"](https://arxiv.org/abs/1507.05717) paper for Chinese License Plate Recognition task.  
 
