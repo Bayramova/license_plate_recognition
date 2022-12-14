@@ -25,21 +25,26 @@ def cached_model(label_converter):
     return model
 
 
-label_converter = cached_label_converter()
-model = cached_model(label_converter)
+def main():
+    label_converter = cached_label_converter()
+    model = cached_model(label_converter)
 
-st.title("License Plate Recognition")
+    st.title("License Plate Recognition")
 
-uploaded_file = st.file_uploader("Choose an image:", type="jpg")
+    uploaded_file = st.file_uploader("Choose an image:", type="jpg")
 
-if uploaded_file:
-    img = Image.open(uploaded_file)
-    st.image(img, channels="BGR")
+    if uploaded_file:
+        img = Image.open(uploaded_file)
+        st.image(img, channels="BGR")
 
-    img = preprocess_image(np.array(img))
+        img = preprocess_image(np.array(img))
 
-    with torch.no_grad():
-        pred = model(img.unsqueeze(0))
+        with torch.no_grad():
+            pred = model(img.unsqueeze(0))
 
-    st.write("Prediction:")
-    st.success(f"{label_converter.decode(pred.argmax(-1))}")
+        st.write("Prediction:")
+        st.success(f"{label_converter.decode(pred.argmax(-1))}")
+
+
+if __name__ == "__main__":
+    main()
